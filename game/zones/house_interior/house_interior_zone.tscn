@@ -168,6 +168,10 @@ size = Vector3(1, 3, 0.2)
 [node name="HouseInteriorZone" instance=ExtResource("1_4sjqh")]
 zone_info = ExtResource("3_x42ux")
 
+[node name="CollisionHandLeft" parent="XROrigin3D/LeftHand" index="0"]
+collision_layer = 0
+collision_mask = 0
+
 [node name="Skeleton3D" parent="XROrigin3D/LeftHand/CollisionHandLeft/LeftHand/Hand_Nails_low_L/Armature" index="0"]
 bones/1/rotation = Quaternion(0.323537, -2.5658142e-05, -0.027220426, 0.9458239)
 bones/3/rotation = Quaternion(-0.04661986, 0.02097099, 0.010327632, 0.9986392)
@@ -182,6 +186,15 @@ bones/23/rotation = Quaternion(0.006871769, -0.0035727466, -0.21195254, 0.977249
 
 [node name="AnimationTree" parent="XROrigin3D/LeftHand/CollisionHandLeft/LeftHand" index="1"]
 tree_root = SubResource("AnimationNodeBlendTree_r27xb")
+
+[node name="FunctionPickup" parent="XROrigin3D/LeftHand/CollisionHandLeft" index="2"]
+grab_distance = 0.3
+grab_collision_mask = 327685
+ranged_collision_mask = 5
+
+[node name="CollisionHandRight" parent="XROrigin3D/RightHand" index="0"]
+collision_layer = 0
+collision_mask = 0
 
 [node name="Skeleton3D" parent="XROrigin3D/RightHand/CollisionHandRight/RightHand/Hand_Nails_low_R/Armature" index="0"]
 bones/1/rotation = Quaternion(0.323537, 2.5658142e-05, 0.027220426, 0.9458239)
@@ -201,6 +214,11 @@ transform = Transform3D(0.5408295, -0.8408129, 0.023173586, 0.08262676, 0.080524
 
 [node name="AnimationTree" parent="XROrigin3D/RightHand/CollisionHandRight/RightHand" index="1"]
 tree_root = SubResource("AnimationNodeBlendTree_dlysg")
+
+[node name="FunctionPickup" parent="XROrigin3D/RightHand/CollisionHandRight" index="2"]
+grab_distance = 0.3
+grab_collision_mask = 327685
+ranged_collision_mask = 5
 
 [node name="World" type="Node3D" parent="." index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
