@@ -169,7 +169,7 @@ size = Vector3(1, 3, 0.2)
 zone_info = ExtResource("3_x42ux")
 
 [node name="CollisionHandLeft" parent="XROrigin3D/LeftHand" index="0"]
-collision_layer = 0
+collision_layer = 131072
 collision_mask = 0
 
 [node name="Skeleton3D" parent="XROrigin3D/LeftHand/CollisionHandLeft/LeftHand/Hand_Nails_low_L/Armature" index="0"]
@@ -193,7 +193,7 @@ grab_collision_mask = 327685
 ranged_collision_mask = 5
 
 [node name="CollisionHandRight" parent="XROrigin3D/RightHand" index="0"]
-collision_layer = 0
+collision_layer = 131072
 collision_mask = 0
 
 [node name="Skeleton3D" parent="XROrigin3D/RightHand/CollisionHandRight/RightHand/Hand_Nails_low_R/Armature" index="0"]
@@ -501,7 +501,7 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 
 transform = Transform3D(1, 0, 0, 0, -0.209823, -0.977739, 0, 0.977739, -0.209823, -1.65298, 1.01782, 5.83564)
 
 [node name="Mesa" parent="." index="8" instance=ExtResource("11_2m2tq")]
-transform = Transform3D(0.021902077, 0, -0.9997601, 0, 1, 0, 0.9997601, 0, 0.021902077, 0, 1.1833588, 0)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 1.0959913, -0.35730398)
 
 [editable path="XROrigin3D/LeftHand/CollisionHandLeft/LeftHand"]
 [editable path="XROrigin3D/LeftHand/CollisionHandLeft/LeftHand/Hand_Nails_low_L"]
